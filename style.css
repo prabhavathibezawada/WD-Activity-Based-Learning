@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:light pink;
+}
+
+header{
+background:green;
+padding:15px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:80vh;
+background:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-shadow:2px 2px 5px black;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero button{
+padding:12px 25px;
+margin-top:20px;
+background:orange;
+border:none;
+cursor:pointer;
+font-size:18px;
+}
+
+section{
+padding:40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:white;
+width:250px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.chef{
+width:220px;
+border-radius:50%;
+margin:20px;
+}
+
+.reviews div{
+background:white;
+margin:15px auto;
+padding:20px;
+width:70%;
+border-left:5px solid orange;
+box-shadow:0 0 8px gray;
+}
+
+form{
+width:320px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input,button{
+padding:12px;
+margin:10px 0;
+}
+
+button{
+background:#8B4513;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+background:#8B4513;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
